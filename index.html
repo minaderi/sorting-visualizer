@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sorting Visualizer</h1>
+   <div class="controls">
+    <label>Size <input type="range" id="size-slider" min="10" max="150" value="50"> <span id="size-value">50</span></label>
+<label>Speed <input type="range" id="speed-slider" min="1" max="100" value="80"> <span id="speed-value">80</span></label>
+  <button id="shuffle-btn">Shuffle</button>
+  <button id="bubble-btn">Bubble Sort</button>
+  <button id="quick-btn">Quick Sort</button>
+</div>
+  </header>
+  <div class="stats">
+  Comparisons: <span id="comparisons">0</span> · Swaps: <span id="swaps">0</span>
+</div>
+  <main id="bars"></main>
+  <script src="script.js"></script>
+</body>
+</html>
